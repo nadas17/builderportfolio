@@ -1,0 +1,77 @@
+---
+import HeroTitle from './HeroTitle.tsx';
+---
+
+<section id="home" class="relative w-full min-h-screen bg-gradient-to-br from-gray-50 to-white hero-bg overflow-hidden scroll-mt-16 sm:scroll-mt-20 md:scroll-mt-24">
+  <!-- Background Video -->
+  <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline 
+    preload="metadata"
+    disablepictureinpicture
+    class="absolute inset-0 w-full h-full object-cover z-0 brightness-75"
+  >
+    <source src="/images/hero-bg.mp4" type="video/mp4" />
+    <!-- Fallback for browsers that don't support video -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-600"></div>
+  </video>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 z-0"></div>
+  <!-- Animated Background Elements -->
+  <div class="floating-shapes z-10">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape shape-square"></div>
+    <div class="shape shape-square"></div>
+  </div>
+  
+  <!-- Construction Icons Animation -->
+  <div class="construction-icons z-10">
+    <div class="construction-icon">🔨</div>
+    <div class="construction-icon">🏗️</div>
+    <div class="construction-icon">🔧</div>
+    <div class="construction-icon">⚒️</div>
+  </div>
+  
+  <!-- Hero Content -->
+  <div class="relative z-20 container mx-auto px-4 py-16 md:py-20 lg:py-32">
+    <div class="max-w-4xl mx-auto text-center">
+      <HeroTitle client:load />
+      <p class="mt-4 md:mt-6 text-base md:text-lg lg:text-xl text-white max-w-2xl mx-auto animate-fade-in-up animation-delay-500 drop-shadow leading-relaxed px-2">
+        İstanbul Ümraniye merkezli, 30 yıllık deneyimle her türlü inşaat ve tadilat işlerinizde yanınızdayım.
+      </p>
+      
+      <!-- Contact Button -->
+      <div class="mt-6 md:mt-10 animate-fade-in-up animation-delay-500">
+        <a href="tel:+905301304264" class="bg-construction-yellow text-gray-900 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg hover:bg-construction-orange hover:scale-105 transition-all duration-300 inline-flex items-center shadow-lg hover:shadow-xl">
+          <span class="hidden sm:inline">📞 Hemen Ara: </span>
+          <span class="sm:hidden">📞 </span>+90 530 130 42 64
+        </a>
+      </div>
+
+      <!-- Enhanced Stats with Animation -->
+      <div class="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-8 px-4 sm:px-0">
+        <div class="text-center animate-fade-in-up animation-delay-300 hover:scale-105 transition-transform duration-300 px-1 sm:px-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold text-construction-yellow mb-1 md:mb-2">30+</div>
+          <div class="text-white text-xs sm:text-sm md:text-base">Yıl Tecrübe</div>
+        </div>
+        <div class="text-center animate-fade-in-up animation-delay-500 hover:scale-105 transition-transform duration-300 px-1 sm:px-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold text-construction-yellow mb-1 md:mb-2">500+</div>
+          <div class="text-white text-xs sm:text-sm md:text-base">Proje</div>
+        </div>
+        <div class="text-center animate-fade-in-up animation-delay-500 hover:scale-105 transition-transform duration-300 px-1 sm:px-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold text-construction-yellow mb-1 md:mb-2">100%</div>
+          <div class="text-white text-xs sm:text-sm md:text-base">Memnuniyet</div>
+        </div>
+        <div class="text-center animate-fade-in-up animation-delay-300 hover:scale-105 transition-transform duration-300 px-1 sm:px-2">
+          <div class="text-xl sm:text-2xl md:text-3xl font-bold text-construction-yellow mb-1 md:mb-2">7/24</div>
+          <div class="text-white text-xs sm:text-sm md:text-base">Destek</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

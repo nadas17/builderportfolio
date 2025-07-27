@@ -1,0 +1,359 @@
+---
+---
+
+<section id="hakkimda" class="py-12 md:py-16 lg:py-20 bg-gray-50 scroll-mt-16 sm:scroll-mt-20 md:scroll-mt-24 animate-fade-in-up">
+  <div class="container mx-auto px-4 lg:px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-8">
+        Elbeyi Gültekin Hakkında
+      </h2>
+      
+      <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg">
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+          <!-- Profile Image Carousel -->
+          <div class="relative w-full h-64 md:h-80 bg-gray-200 rounded-lg overflow-hidden shadow-md group">
+            <div id="profile-carousel" class="w-full h-full relative">
+              <img id="profile-img-1" src="/images/profile1.jpg" alt="Elbeyi Usta Profil 1" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+              <img id="profile-img-2" src="/images/profile2.jpg" alt="Elbeyi Usta Profil 2" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+              <img id="profile-img-3" src="/images/profile3.jpg" alt="Elbeyi Usta Profil 3" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-700 opacity-0">
+              <!-- Fallback always visible initially -->
+              <div id="profile-fallback" class="absolute inset-0 flex items-center justify-center text-gray-500 bg-gradient-to-br from-gray-100 to-gray-200">
+                <div class="text-center">
+                  <div class="text-4xl md:text-6xl mb-2 md:mb-4">👨‍🔧</div>
+                  <h4 class="text-lg md:text-xl font-semibold mb-1 md:mb-2">Elbeyi Usta</h4>
+                  <p class="text-xs md:text-sm">30+ Yıllık Deneyim</p>
+                  <div class="mt-2 md:mt-4 text-xs text-gray-400">
+                    <p>Profil fotoğrafları yükleniyor...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Prev/Next Buttons -->
+            <button id="prev-btn" class="absolute top-1/2 left-2 md:left-3 -translate-y-1/2 z-20 bg-white/40 hover:bg-white/60 p-1.5 md:p-2 rounded-full text-gray-900 transition-all duration-300 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 focus:outline-none" aria-label="Önceki Fotoğraf">
+              <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            <button id="next-btn" class="absolute top-1/2 right-2 md:right-3 -translate-y-1/2 z-20 bg-white/40 hover:bg-white/60 p-1.5 md:p-2 rounded-full text-gray-900 transition-all duration-300 opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 focus:outline-none" aria-label="Sonraki Fotoğraf">
+              <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+            <!-- Image indicators -->
+            <div id="carousel-indicators" class="absolute bottom-3 md:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 opacity-0 transition-opacity duration-300 z-10">
+              <div id="indicator-0" class="w-2 h-2 rounded-full bg-white opacity-100 transition-opacity duration-300"></div>
+              <div id="indicator-1" class="w-2 h-2 rounded-full bg-white opacity-50 transition-opacity duration-300"></div>
+              <div id="indicator-2" class="w-2 h-2 rounded-full bg-white opacity-50 transition-opacity duration-300"></div>
+            </div>
+          </div>
+          
+          <!-- Content -->
+          <div class="text-left md:text-left flex flex-col h-full">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4">30+ Yıllık Deneyim</h3>
+            <p class="text-sm md:text-base text-gray-600 mb-4 md:mb-6 flex-grow leading-relaxed">
+              1995 yılından bu yana İstanbul'da inşaat ve tadilat sektöründe faaliyet gösteriyorum. 
+              Ümraniye merkezli olarak hizmet veriyor, alçıpan, boya, seramik, tesisat ve elektrik 
+              işlerinde uzmanlaşmış durumdayım.
+            </p>
+            
+            <div class="space-y-2 mb-4 md:mb-6">
+              <div class="flex items-center text-sm md:text-base">
+                <span class="text-construction-yellow mr-2">📍</span>
+                <span>Ümraniye / İstanbul</span>
+              </div>
+              <div class="flex items-center text-sm md:text-base">
+                <span class="text-construction-yellow mr-2">📞</span>
+                <span>+90 530 130 42 64</span>
+              </div>
+              <div class="flex items-center text-sm md:text-base">
+                <span class="text-construction-yellow mr-2">📅</span>
+                <span>1995'ten beri</span>
+              </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="mt-auto bg-gray-100 rounded-lg p-3 md:p-4">
+              <h4 class="text-xs md:text-sm font-semibold text-gray-800 mb-2 md:mb-3 text-center">Beni Takip Edin</h4>
+              <div class="flex justify-center items-center space-x-2 md:space-x-3">
+                <a 
+                  href="https://www.facebook.com/elbeyi.usta" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  aria-label="Facebook'ta takip et"
+                >
+                  <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a 
+                  href="https://www.tiktok.com/@elbeyiusta" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="flex items-center justify-center w-10 h-10 md:w-12 md:h-12 bg-black text-white rounded-full hover:bg-gray-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1"
+                  aria-label="TikTok'ta takip et"
+                >
+                  <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.84-.95-6.43-2.8-1.59-1.86-2.3-4.14-2.08-6.52.21-2.38 1.31-4.66 2.89-6.35 1.57-1.68 3.7-2.63 5.8-2.5-1.22.02-2.43.01-3.65.02.12-1.52.78-3.02 1.82-4.06 1.06-1.06 2.64-1.57 4.14-1.78l.04-1.68z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Full-size Image -->
+<div id="image-modal" class="fixed inset-0 bg-black/80 z-50 items-center justify-center p-3 md:p-4 hidden opacity-0 transition-opacity duration-300">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <!-- Main Image -->
+    <img id="modal-img" src="" alt="Tam boyut profil fotoğrafı" class="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl">
+    
+    <!-- Close Button -->
+    <button id="modal-close-btn" class="absolute top-3 right-3 md:top-5 md:right-5 w-8 h-8 md:w-10 md:h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center text-white transition-colors" aria-label="Kapat">
+      <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Modal Navigation -->
+    <button id="modal-prev-btn" class="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-2 md:p-3 rounded-full text-white transition-all duration-300 focus:outline-none" aria-label="Önceki Fotoğraf">
+      <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+    </button>
+    <button id="modal-next-btn" class="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 p-2 md:p-3 rounded-full text-white transition-all duration-300 focus:outline-none" aria-label="Sonraki Fotoğraf">
+      <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // --- DOM Elements ---
+    const profileImages = [
+      document.getElementById('profile-img-1') as HTMLImageElement,
+      document.getElementById('profile-img-2') as HTMLImageElement,
+      document.getElementById('profile-img-3') as HTMLImageElement,
+    ];
+    const fallbackDiv = document.getElementById('profile-fallback');
+    const indicatorsContainer = document.getElementById('carousel-indicators');
+    const indicators = indicatorsContainer?.querySelectorAll('div');
+    const imageModal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+    const modalCloseBtn = document.getElementById('modal-close-btn');
+    const modalPrevBtn = document.getElementById('modal-prev-btn');
+    const modalNextBtn = document.getElementById('modal-next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    
+    // --- State Variables ---
+    let currentImageIndex = 0;
+    let carouselInterval: number | undefined;
+    const loadedImages: HTMLImageElement[] = [];
+
+    // --- Functions ---
+    function updateIndicators(index: number) {
+      indicators?.forEach((indicator, i) => {
+        indicator.style.opacity = i === index ? '1' : '0.5';
+      });
+    }
+
+    function showNextImage() {
+      rotateImages();
+      // Reset interval on manual navigation
+      startCarousel();
+    }
+
+    function showPrevImage() {
+      if (loadedImages.length === 0) return;
+
+      const currentLoadedIndex = loadedImages.indexOf(profileImages[currentImageIndex]);
+      // Go to the previous image, or wrap to the end if at the beginning
+      const prevLoadedIndex = (currentLoadedIndex - 1 + loadedImages.length) % loadedImages.length;
+      const prevImage = loadedImages[prevLoadedIndex];
+      const prevImageOriginalIndex = profileImages.indexOf(prevImage);
+
+      const currentImg = profileImages[currentImageIndex];
+      if (currentImg) {
+        currentImg.style.opacity = '0';
+      }
+      
+      if (prevImage) {
+        prevImage.style.opacity = '1';
+      }
+      
+      currentImageIndex = prevImageOriginalIndex;
+      updateIndicators(currentImageIndex);
+      // Reset interval on manual navigation
+      startCarousel();
+    }
+
+    function rotateImages() {
+      if (loadedImages.length === 0) return;
+
+      const currentLoadedIndex = loadedImages.indexOf(profileImages[currentImageIndex]);
+      const nextLoadedIndex = (currentLoadedIndex + 1) % loadedImages.length;
+      const nextImage = loadedImages[nextLoadedIndex];
+      const nextImageOriginalIndex = profileImages.indexOf(nextImage);
+
+      const currentImg = profileImages[currentImageIndex];
+      if (currentImg) {
+        currentImg.style.opacity = '0';
+      }
+      
+      if (nextImage) {
+        nextImage.style.opacity = '1';
+      }
+      
+      currentImageIndex = nextImageOriginalIndex;
+      updateIndicators(currentImageIndex);
+    }
+
+    function startCarousel() {
+      clearInterval(carouselInterval);
+      if (loadedImages.length > 1) {
+        carouselInterval = window.setInterval(rotateImages, 4000);
+      }
+    }
+
+    function showModalImage() {
+      if (loadedImages.length > 0) {
+        const currentImg = loadedImages.find(img => profileImages.indexOf(img) === currentImageIndex);
+        if (currentImg) {
+          modalImg.src = currentImg.src;
+        }
+      }
+    }
+
+    function openModal(src: string) {
+      if (imageModal && modalImg) {
+        modalImg.src = src;
+        imageModal.classList.remove('hidden');
+        imageModal.classList.add('flex');
+        setTimeout(() => imageModal.classList.add('opacity-100'), 10);
+        clearInterval(carouselInterval);
+        document.body.style.overflow = 'hidden';
+        updateModalNav();
+      }
+    }
+
+    function closeModal() {
+      if (imageModal) {
+        imageModal.classList.remove('opacity-100');
+        setTimeout(() => {
+          imageModal.classList.add('hidden');
+          imageModal.classList.remove('flex');
+        }, 300);
+        startCarousel();
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    function updateModalNav() {
+      if (loadedImages.length <= 1) {
+        if(modalPrevBtn) modalPrevBtn.style.display = 'none';
+        if(modalNextBtn) modalNextBtn.style.display = 'none';
+      } else {
+        if(modalPrevBtn) modalPrevBtn.style.display = 'block';
+        if(modalNextBtn) modalNextBtn.style.display = 'block';
+      }
+    }
+
+    function preloadImages() {
+      let imagesToLoad = profileImages.length;
+
+      profileImages.forEach((img, index) => {
+        if (!img || !img.src) {
+          imagesToLoad--;
+          if (imagesToLoad === 0 && loadedImages.length > 0) {
+             initializeCarousel();
+          }
+          return;
+        }
+
+        const newImg = new Image();
+        newImg.src = img.src;
+        newImg.onload = () => {
+          loadedImages.push(img);
+          imagesToLoad--;
+          if (imagesToLoad === 0 && loadedImages.length > 0) {
+            initializeCarousel();
+          }
+        };
+        newImg.onerror = () => {
+          imagesToLoad--;
+          if (imagesToLoad === 0 && loadedImages.length > 0) {
+            initializeCarousel();
+          }
+        };
+      });
+    }
+    
+    function initializeCarousel() {
+        if (fallbackDiv) fallbackDiv.style.display = 'none';
+        if (indicatorsContainer) indicatorsContainer.style.opacity = '1';
+        
+        // Set initial image
+        const firstImage = loadedImages[0];
+        if(firstImage) {
+            firstImage.style.opacity = '1';
+            currentImageIndex = profileImages.indexOf(firstImage);
+            updateIndicators(currentImageIndex);
+        }
+
+        startCarousel();
+    }
+
+    // --- Event Listeners & Initialization ---
+    nextBtn?.addEventListener('click', showNextImage);
+    prevBtn?.addEventListener('click', showPrevImage);
+
+    modalPrevBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showPrevImage();
+      showModalImage();
+    });
+
+    modalNextBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showNextImage();
+      showModalImage();
+    });
+
+    profileImages.forEach(img => {
+      if (img) {
+        img.addEventListener('click', () => {
+          // Only allow click if the image is visible (part of loaded images)
+          if (loadedImages.includes(img)) {
+            openModal(img.src);
+          }
+        });
+        img.classList.add('cursor-pointer');
+      }
+    });
+
+    modalCloseBtn?.addEventListener('click', closeModal);
+    imageModal?.addEventListener('click', (e) => {
+      if (e.target === imageModal) {
+        closeModal();
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !imageModal?.classList.contains('hidden')) {
+        closeModal();
+      }
+      if (!imageModal?.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') {
+          showPrevImage();
+          showModalImage();
+        } else if (e.key === 'ArrowRight') {
+          showNextImage();
+          showModalImage();
+        }
+      }
+    });
+
+    // --- Start Everything ---
+    if (profileImages.some(img => img)) {
+      preloadImages();
+    }
+  });
+</script>

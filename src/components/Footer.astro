@@ -1,0 +1,49 @@
+---
+import { SITE } from "../config/site";
+
+const socialLinks = [
+  { name: 'Facebook', href: 'https://www.facebook.com/elbeyi.usta', icon: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
+];
+---
+
+<footer class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <!-- About -->
+      <div class="space-y-3">
+        <h3 class="text-2xl font-bold">{SITE.name}</h3>
+        <p class="text-gray-400 max-w-sm mx-auto md:mx-0">
+          {SITE.description}
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="space-y-3">
+        <h4 class="text-lg font-semibold">Hızlı Bağlantılar</h4>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#hakkimda" class="hover:text-construction-yellow transition-colors">Hakkımda</a></li>
+          <li><a href="#hizmetler" class="hover:text-construction-yellow transition-colors">Hizmetler</a></li>
+          <li><a href="#projeler" class="hover:text-construction-yellow transition-colors">Projeler</a></li>
+          <li><a href="#iletisim" class="hover:text-construction-yellow transition-colors">İletişim</a></li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div class="space-y-3">
+        <h4 class="text-lg font-semibold">Takip Edin</h4>
+        <div class="flex justify-center md:justify-start space-x-4">
+          {socialLinks.map(link => (
+            <a href={link.href} target="_blank" rel="noopener" class="text-gray-400 hover:text-construction-yellow transition-colors">
+              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d={link.icon} /></svg>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+      <p>&copy; {new Date().getFullYear()} {SITE.name}. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>

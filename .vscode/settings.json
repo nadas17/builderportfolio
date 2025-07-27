@@ -1,0 +1,22 @@
+{
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "astro": "html",
+    "javascript": "javascript",
+    "typescript": "javascript"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["class:list=\\{([^}]*)\\}", "'([^']*)'"],
+    ["class:list=\\{([^}]*)\\}", "\"([^\"]*)\""],
+    ["class=\\{([^}]*)\\}", "'([^']*)'"],
+    ["class=\\{([^}]*)\\}", "\"([^\"]*)\""]
+  ],
+  "files.associations": {
+    "*.astro": "astro"
+  },
+  "emmet.includeLanguages": {
+    "astro": "html"
+  }
+}

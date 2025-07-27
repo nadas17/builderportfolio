@@ -1,0 +1,65 @@
+---
+const services = [
+  {
+    icon: "M8 17l-1.41-1.41L8 14.17l-2.59-2.58L4 13v4h4l-1.41-1.41L8 17zM12 3l-1.41 1.41L12 5.83l2.59-2.58L16 2h-4l-1.41 1.41L12 3zM21 13v4h-4l1.41-1.41L17 14.17l-1.59 1.58L14 17h-4l-1.41-1.41L7 17l-1.41-1.41L4 17v-4l1.41 1.41L7 15.83l1.59-1.58L10 13h4l1.41 1.41L17 13l1.41 1.41L20 13l1.41 1.41L21 13z",
+    title: "Alçıpan ve Kartonpiyer",
+    description: "Mekanlarınıza estetik ve modern bir görünüm kazandıran alçıpan duvar, asma tavan ve kartonpiyer uygulamaları."
+  },
+  {
+    icon: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM10 17l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z",
+    title: "Boya ve Badana",
+    description: "İç ve dış cepheler için yüksek kaliteli boya uygulamaları. Renk seçimi ve profesyonel işçilikle mekanlarınızı yeniliyoruz."
+  },
+  {
+    icon: "M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 20H4v-4h4v4zm0-6H4v-4h4v4zm0-6H4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4zm6 12h-4v-4h4v4zm0-6h-4v-4h4v4zm0-6h-4V4h4v4z",
+    title: "Seramik ve Fayans",
+    description: "Banyo, mutfak ve zeminler için estetik ve dayanıklı seramik, fayans ve mozaik döşeme hizmetleri."
+  },
+  {
+    icon: "M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.5 2.54l2.1 2.1c.88-1.25 1.4-2.73 1.4-4.24 0-4.42-3.58-8-8-8-.75 0-1.47.1-2.17.29l2.12 2.12c.02-.01.03-.02.05-.03zM1 4.27l2.28 2.28C3.1 7.47 3 8.21 3 9c0 4.42 3.58 8 8 8 .79 0 1.53-.11 2.23-.3l2.28 2.28L17 17.73 2.27 3 1 4.27zM7.73 9.73L6.27 8.27C6.1 8.49 6 8.74 6 9c0 2.21 1.79 4 4 4 .26 0 .51-.01.73-.03l-1.46-1.46c-.98.24-2 .2-2.54-.54s-.78-1.56-.54-2.54z",
+    title: "Sıhhi Tesisat",
+    description: "Temiz ve atık su tesisatı kurulumu, tamiri ve bakımı. Modern ve güvenilir tesisat çözümleri sunuyoruz."
+  },
+  {
+    icon: "M16 11.42V1.5c0-.83-.67-1.5-1.5-1.5S13 .67 13 1.5v9.92c-1.19-.6-2.59-.6-3.78 0V1.5C9.22.67 8.55 0 7.77 0S6.28.67 6.28 1.5v9.92C2.81 12.9 0 16.14 0 20c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4 0-3.86-2.81-7.1-6.28-8.58zM12 22H4c-1.1 0-2-.9-2-2 0-2.76 2.24-5 5-5 .55 0 1.08.09 1.58.24l.42.12.42-.12c.5-.15 1.03-.24 1.58-.24 2.76 0 5 2.24 5 5 0 1.1-.9 2-2 2z",
+    title: "Elektrik Tesisatı",
+    description: "Güvenli ve standartlara uygun elektrik tesisatı kurulumu, aydınlatma sistemleri ve pano montajı."
+  },
+  {
+    icon: "M20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM5.92 19H5v-.92l9.06-9.06.92.92L5.92 19z",
+    title: "Komple Tadilat",
+    description: "Anahtar teslim komple ev ve iş yeri tadilatı. Planlama, tasarım ve uygulama dahil tüm süreçleri yönetiyoruz."
+  }
+];
+---
+
+<section id="hizmetler" class="py-16 md:py-20 lg:py-32 bg-brand-light scroll-mt-16 sm:scroll-mt-20 md:scroll-mt-24 animate-fade-in-up">
+  <div class="container mx-auto px-4">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-brand-dark">
+        Sunduğum Hizmetler
+      </h2>
+      <p class="mt-3 md:mt-4 text-base md:text-lg text-brand-secondary/80 px-4">
+        Yaşam alanlarınızı dönüştürmek için sunduğum profesyonel hizmetler. Kalite, estetik ve fonksiyonelliği bir araya getiriyorum.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+      {services.map((service, index) => (
+        <div class={`bg-white rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-fade-in-up animation-delay-${index * 150}`}>
+          <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-brand-primary text-white rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-6 shadow-lg">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24">
+              <path d={service.icon} />
+            </svg>
+          </div>
+          <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-brand-dark mb-2 sm:mb-2 md:mb-3">{service.title}</h3>
+          <p class="text-brand-secondary/90 leading-relaxed text-sm sm:text-base">{service.description}</p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
